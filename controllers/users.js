@@ -29,7 +29,7 @@ module.exports.renderLoginForm =  (req , res ) =>{
 };
 
 module.exports.login =  async(req , res)=>{
-    req.flash("success","Welcome to Escort-Guide! Logged in successfully!");
+    req.flash("success","Welcome to Tour-Guide! Logged in successfully!");
     let redirectUrl = res.locals.redirectUrl || "/listings";
     res.redirect(redirectUrl);
 };
